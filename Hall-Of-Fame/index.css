@@ -1,0 +1,406 @@
+@font-face {
+    font-family: 'good';
+    src: url('./Coalition_v2..ttf');
+
+}
+
+@font-face {
+    font-family: "Verygood";
+    src: url('./urbantribE.ttf');
+}
+
+
+::-webkit-scrollbar{
+    width: 0.5em;
+    margin-right:5px;
+}
+
+::-webkit-scrollbar-track{
+    background: linear-gradient(to right top, #cd42c1, #ff3c90, #ff695a, #ffa325, #ebd812);
+    border-radius: 5px;
+    margin-block:5px;
+    margin: 3px;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(57, 128, 187);
+    border-radius: 5px;
+    border: 2px solid linear-gradient(to right top, #cd42c1, #ff3c90, #ff695a, #ffa325, #ebd812);
+}
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #161418;
+    color: #eee;
+    user-select: none;
+}
+
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
+.very-main .nav{
+ display: flex;
+justify-content: space-between;
+align-items: center;
+/* position: fixed; */
+
+}
+
+.nav img {
+    margin: 50px;
+    margin-inline:70px;
+    padding: 0;
+    width: 100px;
+
+
+}
+
+.nav .heading{
+    font-family: "good" , sans-serif;
+    font-size: 4vw;
+    letter-spacing: 5px;
+    font-weight: 600px;
+    cursor: pointer;
+    filter:drop-shadow(0 0 0.75rem #ff3c90)
+
+    
+}
+
+
+
+
+/* full Desktop screen css */
+
+
+.container{
+
+    height: 525px;
+    margin-bottom: 0;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .card-cnt{
+    margin: 0;
+    padding:0;
+}
+
+
+
+.container .card-cnt .header{
+  
+    margin:0;
+    padding:0;
+}
+
+.container .card-cnt .header p{
+
+    font-family: "good" , sans-serif;
+    font-size:2rem;
+    padding:0;
+    margin:0;
+    margin-left:71px;
+    color:#ff3c90;
+}
+
+
+
+
+.container .card-cnt1{
+    margin: 0;
+    padding:0;
+}
+
+
+
+.container .card-cnt1 .header{
+  
+    margin:0;
+    padding:0;
+}
+
+.container .card-cnt1 .header p{
+
+    font-family: "good" , sans-serif;
+    font-size:2rem;
+    padding:0;
+    margin:0;
+    margin-left:71px;
+    color:#ff3c90;
+}
+
+
+
+
+
+
+
+.card {
+
+    margin: 4.4rem 70px;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    box-shadow: 0 7px 20px 5px #6e6d6d 88;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    overflow: scroll;
+    scroll-behavior: smooth;
+    transition: 0.5s all;
+    height: 400px;
+    border:1px solid grey;
+    display: flex;
+    flex-direction: column;
+    /* width: 90%; */
+    padding-inline: 1rem;
+    /* padding-bottom: 0rem; */
+    padding-top: 0.5rem;
+    /* scroll-behavior: smooth; */
+     overflow-x: hidden;
+     overflow-y: auto;
+     margin-top: 0px;
+
+
+}
+
+
+
+
+.bug-finder {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.089);
+    box-shadow: 0 2px 9px 0 rgba(189, 149, 40, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.bug-finder .avatar {
+    margin-right: 10px;
+}
+
+.bug-finder .p-info p {
+    margin: 0;
+}
+
+.bug-finder .p-info .name {
+    margin-top: 3px;
+
+}
+
+.bug-finder .p-info .roll-no {
+    font-family: 'Verygood';
+    margin: 0;
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
+
+.bug-finder .a_img {
+    width: 60px;
+}
+
+.name {
+    font-family: "good", sans-serif;
+    color: yellow;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+}
+
+.bug-finder img {
+    width: 40px;
+}
+
+
+
+.bug-finder .social-handle {
+    display: flex;
+    align-items: center;
+}
+
+.bug-finder .social-handle .bug {
+    display: flex;
+}
+
+.bug-finder .social-handle .line {
+    width: 2px;
+    color: white;
+    height: 40px;
+    background-color: white;
+    margin-inline: 1rem;
+}
+
+
+.what{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: "good",sans-serif;
+    font-size:4.3vw;
+    color: #ff3c90;
+    margin-top: 5px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+/* medium size responsiveness  */
+
+
+
+/* mobile responsiveness  */
+
+
+@media only screen  and (max-width:1000px){
+    
+
+    .card-cnt{
+        display: none;
+    }
+    
+    .what{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-family: "good",sans-serif;
+        font-size:3.7vw;
+        color: #ff3c90;
+        margin-top: 5px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+
+    .nav .heading{
+        font-family: "good" , sans-serif;
+        font-size: 4vw;
+        letter-spacing: 5px;
+        font-weight: 600px;
+        cursor: pointer;
+        filter:drop-shadow(0 0 0.75rem #ff3c90)
+    
+        
+    }
+
+
+    .container{
+
+        height: 525px;
+        margin-bottom: 0;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .container .card-cnt{
+        margin: 0;
+        padding:0;
+    }
+    
+    
+    
+    .container .card-cnt .header{
+      
+        margin:0;
+        padding:0;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen  and (max-width:500px){
+
+    
+    .nav img {
+        margin: 10px;
+        /* margin-inline:70px; */
+        margin-inline: 0px;
+        padding: 0;
+        width: 40px;
+    
+    
+    }
+
+    .bug-finder .avatar {
+       display: none;
+    }
+
+
+    .what{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-family: "good",sans-serif;
+        font-size:40px;
+        margin-left: 20px;
+        color: #ff3c90;
+        margin-top: 5px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    .very-main{
+        overflow-x: hidden;
+    }
+
+
+    .very-main .nav{
+        display: flex;
+       /* justify-content: space-between; */
+       align-items: center;
+       /* position: fixed; */
+       /* gap: 4px; */
+       }
+
+    .very-main .nav .img{
+        margin-left:4px;
+        
+    }
+
+
+    .nav .heading{
+        font-family: "good" , sans-serif;
+        font-size: 23px;
+        letter-spacing: 5px;
+        font-weight: 600px;
+        cursor: pointer;
+        margin-left: 8px;
+        filter:drop-shadow(0 0 0.75rem #ff3c90)
+    
+        
+    }
+
+    
+   
+    
+
+
+
+}
